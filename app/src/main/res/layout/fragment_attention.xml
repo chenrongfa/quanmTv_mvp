@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/top_banner"></include>
+    <include layout="@layout/line"></include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/el_recyler_live_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.jude.easyrecyclerview.EasyRecyclerView>
+    <LinearLayout
+        android:id="@+id/ll_not_login"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/follow_lives_not_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/light_gray"
+            android:textSize="8sp"
+            android:text="当前尚未登录"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginTop="15dp"
+            android:textSize="10sp"
+            android:textColor="@color/red"
+            android:text="点击登录 , 精彩不再错过"
+            android:background="@drawable/click_to_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

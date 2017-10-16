@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <android.support.design.widget.AppBarLayout
+      android:background="@color/white"
+        app:expanded="true"
+      android:layout_width="match_parent"
+      android:layout_height="100dp">
+
+      <android.support.v7.widget.Toolbar
+          app:contentInsetStart="0dp"
+          app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+          android:layout_width="match_parent"
+          app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Dark"
+          android:layout_height="?attr/actionBarSize">
+          <include layout="@layout/home_top"></include>
+          <include layout="@layout/line"></include>
+      </android.support.v7.widget.Toolbar>
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <android.support.design.widget.TabLayout
+              app:tabMode="scrollable"
+              android:id="@+id/tl_index"
+              android:layout_gravity="center"
+
+              app:tabSelectedTextColor="@color/red"
+              app:tabIndicatorColor="@color/red"
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="?attr/actionBarSize"/>
+        <android.support.v7.widget.AppCompatCheckBox
+            android:background="@drawable/sort_category"
+            android:button="@null"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+      </LinearLayout>
+        <include layout="@layout/line"></include>
+  </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_index"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        ></android.support.v4.view.ViewPager>
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/ic_start_live"
+        android:layout_gravity="bottom|right"
+        android:elevation="16dp"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

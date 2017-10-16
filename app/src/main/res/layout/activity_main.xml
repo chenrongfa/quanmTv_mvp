@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></FrameLayout>
+    <include layout="@layout/line"></include>
+    <RadioGroup
+        android:id="@+id/rg_index"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EDEDED"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_index"
+            style="@style/home_tab_bottom"
+            android:drawableTop="@drawable/rb_index"
+            android:text="首页"
+            android:textColor="@drawable/rb_text_color"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_live"
+            style="@style/home_tab_bottom"
+            android:drawableTop="@drawable/rb_live"
+            android:text="直播"
+            android:textColor="@drawable/rb_text_color"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_attention"
+            style="@style/home_tab_bottom"
+            android:drawableTop="@drawable/rb_attention"
+            android:text="关注"
+            android:textColor="@drawable/rb_text_color"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_mysetting"
+            style="@style/home_tab_bottom"
+            android:drawableTop="@drawable/rb_mysetting"
+            android:text="我的"
+            android:textColor="@drawable/rb_text_color"/>
+    </RadioGroup>
+
+</LinearLayout>

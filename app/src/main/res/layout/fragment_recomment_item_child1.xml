@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+
+            android:id="@+id/iv_live_photo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"/>
+        <ImageView
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:background="@mipmap/ic_guess_corner_tag"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_is_guessing"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="4dp"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:textSize="10sp"/>
+        <TextView
+            android:drawablePadding="4dp"
+            android:paddingRight="4dp"
+            android:gravity="center"
+            android:id="@+id/tv_viewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@mipmap/viewer"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

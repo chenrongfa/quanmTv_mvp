@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+        <style name="Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" parent="android:TextAppearance.Material.Widget.Button.Inverse"/>
+        <style name="Base.TextAppearance.AppCompat.Widget.Button.Colored" parent="android:TextAppearance.Material.Button"/>
+        <style name="TextAppearance.AppCompat.Notification.Info.Media"/>
+        <style name="TextAppearance.AppCompat.Notification.Media"/>
+        <style name="TextAppearance.AppCompat.Notification.Time.Media"/>
+        <style name="TextAppearance.AppCompat.Notification.Title.Media"/>
+
+</resources>
